@@ -4,21 +4,21 @@ This repository is a GitHub-distributable Codex marketplace containing one skill
 
 ## Install
 
-Replace `OWNER/REPO` with the GitHub repository after publishing this directory:
+Add this marketplace:
 
 ```powershell
-codex plugin marketplace add OWNER/REPO --ref main
+codex plugin marketplace add yishuyiputifcy/Narrative-review-workflow --ref main
 ```
 
-Then restart the ChatGPT desktop app, open the Plugins Directory, select the **Narrative Review Toolkit** source, and install **Narrative Review**. A ChatGPT workspace administrator may instead import `https://github.com/OWNER/REPO` from **Workspace settings > Plugins > Add > Import marketplace** with an empty Path when this repository is the marketplace root.
+Then restart the ChatGPT desktop app, open the Plugins Directory, select the **Narrative Review Toolkit** source, and install **Narrative Review**. A ChatGPT workspace administrator may instead import https://github.com/yishuyiputifcy/Narrative-review-workflow from **Workspace settings > Plugins > Add > Import marketplace** with an empty Path when this repository is the marketplace root.
 
 ## Included skills
 
-| Skill | Codex invocation | Notes |
-|---|---|---|
+| Skill                     | Codex invocation                              | Notes                                                                                                                                                     |
+| ------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Narrative review workflow | `$narrative-review:narrative-review-workflow` | Explicit-only. The current message must contain this exact name and ask to use it. Discussion, examples, and historical invocations do not authorize use. |
-| Academic Research Suite | `$narrative-review:academic-research-suite` | Bundled ARS-Codex router and its vendored resources. Its own natural-language and alias routing rules are retained. |
-| Humanizer | `$narrative-review:humanizer` | Bundled prose-rewrite skill. Its own natural-language invocation rules are retained. |
+| Academic Research Suite   | `$narrative-review:academic-research-suite`   | Bundled ARS-Codex router and its vendored resources. Its own natural-language and alias routing rules are retained.                                       |
+| Humanizer                 | `$narrative-review:humanizer`                 | Bundled prose-rewrite skill. Its own natural-language invocation rules are retained.                                                                      |
 
 The main workflow keeps `policy.allow_implicit_invocation: false`. This blocks implicit platform selection for that skill; it is a behavior policy, not filesystem isolation. Installing the plugin does not itself invoke any skill.
 
