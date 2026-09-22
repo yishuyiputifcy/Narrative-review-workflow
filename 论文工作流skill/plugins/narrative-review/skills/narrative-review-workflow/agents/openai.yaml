@@ -1,0 +1,7 @@
+interface:
+  display_name: "Narrative Review Workflow"
+  short_description: "Run a staged narrative-review project only after explicit invocation"
+  default_prompt: "Use $narrative-review:narrative-review-workflow only for the task stated in this message."
+
+policy:
+  allow_implicit_invocation: false

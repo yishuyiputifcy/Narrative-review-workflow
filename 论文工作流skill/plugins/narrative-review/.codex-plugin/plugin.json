@@ -1,0 +1,18 @@
+{
+  "name": "narrative-review",
+  "version": "0.1.0",
+  "description": "A staged narrative-review workflow with bundled research and prose-support skills.",
+  "author": {
+    "name": "Narrative Review Workflow contributors"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Narrative Review",
+    "shortDescription": "Staged narrative-review workflows",
+    "longDescription": "Coordinate a disk-backed narrative review and use the bundled ARS and Humanizer skills independently.",
+    "developerName": "Narrative Review Workflow contributors",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "defaultPrompt": "List the skills included in Narrative Review and explain their explicit invocation names. Do not run a paper workflow."
+  }
+}

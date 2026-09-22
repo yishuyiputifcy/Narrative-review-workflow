@@ -1,0 +1,20 @@
+{
+  "name": "narrative-review-toolkit",
+  "interface": {
+    "displayName": "Narrative Review Toolkit"
+  },
+  "plugins": [
+    {
+      "name": "narrative-review",
+      "source": {
+        "source": "local",
+        "path": "./plugins/narrative-review"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
